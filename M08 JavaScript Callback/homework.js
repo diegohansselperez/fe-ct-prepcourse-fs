@@ -88,7 +88,7 @@ function map(array, cb) {
    // Retorna el nuevo arreglo.
    // Tu código:
    let res;
-   res = array.map(cb)
+   res = array.map(element => cb(element))
    return res;
 }
 
@@ -103,13 +103,17 @@ function filter(arrayOfStrings) {
    // Debes identificar todos los elementos el arreglo que comiencen con la letra "a".
    // Luego retorna un nuevo arreglo con estos elementos.
    // Tu código:
+   // let newArray = [];
+   // newArray = arrayOfStrings.filter((element) => element[0] === "a");
+   // return newArray;
 
-   var letA =  /\ba\w+/g;
+
+   let letA =  /\ba\w+/g;
    let res = arrayOfStrings.filter(element => element.match(letA))
    return res;
 }
 
-console.log("Ejercicio8",filter(array4));
+console.log("Ejercicio7",filter(array4));
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
