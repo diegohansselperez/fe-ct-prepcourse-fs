@@ -9,6 +9,12 @@ function deObjetoAarray(objeto) {
    // Tu código:
 
    return Object.entries(objeto)
+
+   // let newArray = []
+
+   // for(let clave in objeto){
+   //    newArray.push([clave, objeto[clave]])
+   // }
 }
 
 console.log(deObjetoAarray(obj));
@@ -65,12 +71,9 @@ function asAmirror(frase) {
    // [EJEMPLO]: "The Henry Challenge is close!"  ---> "ehT yrneH egnellahC si !esolc"
    // Tu código:
    const caracteres = frase.split(" ");
-   
    const letrasReverse = caracteres.map(letra => letra.split("").reverse().join(""));
-
+   return letrasReverse.join(""); 
    //caracteres.reverse();
-
-   return letrasReverse.join("")
 }
 
 console.log(asAmirror(string7));
